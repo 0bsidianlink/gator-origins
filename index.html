@@ -12,14 +12,14 @@
 							}
 		</style>
     </head>
-    <body onload="getOptions1()">
+    <body onload="getOptions1(), getOptions2('grovyle')">
         <h1 class="th_ehead">Swamp gang</h1>
 
         <fieldset class="backgroundbackground">
             <h1>hey is this a <span class="pokeName">pmd reference</span> machine</h1>
             <br><br><br><br><br><br><br>
             <!-- yes i know there are much better ways to do this i will figure it out later -->
-            <img id="portrait" src="portraits/grovyle/grovylesmug.png" class="picAlign">
+            <img id="portrait" src="portraits/grovyle/grovyleneutral.png" class="picAlign">
             <P class="test">
                 <textarea class="PMDtext" 
                         id = "myTextArea"
@@ -31,16 +31,17 @@
 <br>
 
 <select name="dropdown1" id="dropdown1" onchange="onChangePFP1()">
-  <!--  <option value="smug">smug</option>
-    <option value="mute">mute</option> -->
 </select>
 
-<button type="button" onclick="changePFP('grovyle', 'mute')">mute that mf</button> 
+<select name="dropdown2" id="dropdown2" onchange="onChangePFP2()">
+</select>
+
+<!-- <button type="button" onclick="changePFP('grovyle', 'mute')">mute that mf</button> 
 <button type="button" onclick="changePFP('grovyle', 'neutral')">llet him bbreath</button> 
-<button type="button" onclick="changePFP('grovyle', 'smug')">dreamworks</button>
+<button type="button" onclick="changePFP('grovyle', 'smug')">dreamworks</button> old puttons -->
                 
             </P>
-<p class="another"> yeah i'd like to make this into a little program sometime, maybe something where you can do a bit more like choose the pokemon picture and have the name show up in the box, maybe even an export to image thing or something i don't quite know yet. probably will have to change that textbox to something better because you can break it pretty easily i think lol. idk we'll see where i get with this <br> <br>also don't spam click the background you will get a seizure. oh shoot i should change the background to the pmd quiz opening. idk how that would work but that would be cool damn</p>
+<p class="another">yeah i know about the "undefined" thing i can't quite figure out how to fix that yet<br> yeah i'd like to make this into a little program sometime, maybe something where you can do a bit more like choose the pokemon picture and have the name show up in the box, maybe even an export to image thing or something i don't quite know yet. probably will have to change that textbox to something better because you can break it pretty easily i think lol. idk we'll see where i get with this <br> <br>I fixed the background so now you will not get a rave on spam click. oh shoot i should change the background to the pmd quiz opening. idk how that would work but that would be cool damn</p>
         </fieldset>
 
         <h1 class="th_ehead">bottom text</h1>
