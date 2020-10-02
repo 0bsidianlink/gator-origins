@@ -24,6 +24,9 @@ const pokemon = {
     },
     celebi: {
         neutral: 'portraits/celebi/celebineutral.png'
+    },
+    pat: {
+        neutral: 'portraits/pat/patneutral.png'
     }
 }
 
