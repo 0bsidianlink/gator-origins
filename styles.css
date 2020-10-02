@@ -45,6 +45,7 @@
     padding-right: 36px;
     padding-left: 36px;
     overflow-y: hidden;
+    text-shadow: 2.5px 0px black, 0px 2.5px black;
 }
 
 .backgroundbackground{
