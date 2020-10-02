@@ -4,8 +4,12 @@
 
 @font-face {
     font-family: 'wonder_mailregular';
-    src: url('wondermail-webfont.woff2') format('woff2'),
-         url('wondermail-webfont.woff') format('woff');
+    src: url('wondermail-webfont.eot');
+    src: url('wondermail-webfont.eot?#iefix') format('embedded-opentype'),
+         url('wondermail-webfont.woff2') format('woff2'),
+         url('wondermail-webfont.woff') format('woff'),
+         url('wondermail-webfont.ttf') format('truetype'),
+         url('wondermail-webfont.svg#wonder_mailregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
