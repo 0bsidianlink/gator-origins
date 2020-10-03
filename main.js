@@ -30,18 +30,25 @@ const pokemon = {
     }
 }
 
+const baseText = {
+    grovyle: 'Grovyle: im gonna slap dusknoir on bothe cheeks',
+    dusknoir: 'Dusknoir: sex',
+    celebi: 'Celebi:',
+    pat: 'Pat: Huge Alligator'
+}
+
 // this is set up so i can enter something in here and it will automatically generate the html stuff
 
 let choices1 = Object.keys(pokemon);
 let table1 =  document.getElementById('dropdown1');
 
+
 function getOptions1 () {
-    for(var i = 0; i < choices1.length; i++) {
-    var x = document.getElementById("dropdown1");
-  var option = document.createElement("option");
+    for( i = 0; i < choices1.length; i++) {
+    let x = document.getElementById("dropdown1");
+  let option = document.createElement("option");
   option.text = choices1[i];
   option.value = choices1[i];
-
   x.add(option);
     }
 } 
@@ -56,9 +63,9 @@ function getOptions2 (currentPokemon) {
       element.removeChild(element.firstChild);
     }
 
-    for(var i = 0; i < choices1.length; i++) {
-    var x = document.getElementById("dropdown2");
-  var option = document.createElement("option");
+    for( i = 0; i < choices2.length; i++) {
+    let x = document.getElementById("dropdown2");
+  let option = document.createElement("option");
   option.text = choices2[i];
   option.value = choices2[i];
   x.add(option);
@@ -80,7 +87,7 @@ let currentPokemon = document.getElementById("dropdown1").value
 let currentFacial = 'neutral'
 changePFP (currentPokemon, currentFacial)
 getOptions2(currentPokemon)
-
+document.getElementById("myTextArea").value = baseText[currentPokemon];
 }
 
 function onChangePFP2 () {
